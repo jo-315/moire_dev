@@ -31,7 +31,6 @@ get_header('member');
         </div>
 
         <div class="profile_text_content-button-wrap">
-          <a href='/author/kenjo' class="profile_text_content-button">記事一覧</a>
           <a
             href="https://twitter.com/VYZ3pDOkmPiwXtf?lang=ja"
             target="_blank"
@@ -121,7 +120,6 @@ get_header('member');
           現在は反抗期の妹とペットのホルスタインに悩まされてます。
         </div>
         <div class="profile_text_content-button-wrap">
-          <a href='/author/yonta' class="profile_text_content-button">記事一覧</a>
         </div>
       </div>
     </div>
@@ -143,7 +141,6 @@ get_header('member');
           中の人は日本人です。現在ロシアのサンクト=ペテルブルクに留学中。普通の大学3年生。太陽の光を浴びたいが最近の口癖。よろしくお願いいたします。
         </div>
         <div class="profile_text_content-button-wrap">
-          <a href='/author/natalie' class="profile_text_content-button">記事一覧</a>
         </div>
       </div>
     </div>
@@ -165,7 +162,6 @@ get_header('member');
           犬を愛する旅行好きな中国語学習者。ただ今中国にて修行中です。老後は犬とともに暮らしたい。
         </div>
         <div class="profile_text_content-button-wrap">
-          <a href='/author/shoka' class="profile_text_content-button">記事一覧</a>
         </div>
       </div>
     </div>
@@ -188,7 +184,6 @@ get_header('member');
           本場ドイツでビールを飲むも普通に「苦っ」と言ってしまう。ただ、Radler という飲みやすいビールに出会い救われる。
         </div>
         <div class="profile_text_content-button-wrap">
-          <a href='/author/taro' class="profile_text_content-button">記事一覧</a>
         </div>
       </div>
     </div>
@@ -212,7 +207,6 @@ get_header('member');
         </div>
 
         <div class="profile_text_content-button-wrap">
-          <a href='/author/imanishi' class="profile_text_content-button">記事一覧</a>
           <a
             href="https://twitter.com/imanishi?lang=ja"
             target="_blank"

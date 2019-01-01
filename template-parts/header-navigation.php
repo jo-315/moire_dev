@@ -34,6 +34,20 @@
           <a href="/about">
             ABOUT
           </a>
+          <div class="header-main-navigation-child header-main-navigation-items-wrap--member">
+            <ul>
+              <li>
+                <a href="/about">
+                  ABOUT
+                </a>
+              </li>
+              <li>
+                <a href="/member">
+                  MEMBEER
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li>
           <a>
