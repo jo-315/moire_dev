@@ -9,15 +9,7 @@
 			the_title( '<h1 class="single-title">', '</h1>' );
 			?>
 
-			<div class="single-cat-wrap">
-				<?php moire_category(); ?>
-			</div>
-
       <div class="single-title-meta">
-				<div class="single-author">
-					<?php	moire_theme_single_posted(); ?>
-				</div>
-
 				<?php moire_posted_date(); ?>
 			</div>
 
@@ -41,12 +33,5 @@
 			);
 		?>
 
-		<div>
-			人気記事ランキングに反映されます。クリックお願いします！
-		</div>
-
-		<div class="single-author single-author-page-bottom">
-			<?php	moire_theme_single_posted(true); ?>
-		</div>
 	</div>
 </article>

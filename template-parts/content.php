@@ -24,7 +24,7 @@
 				</div>
 				<div class="archive-item-author-wrap">
 					<?php
-						moire_theme_posted_by_no_name()
+						moire_posted_date()
 					?>
 				</div>
 			</div>

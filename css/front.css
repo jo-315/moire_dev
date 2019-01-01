@@ -175,136 +175,73 @@
    z-index: 999;
  }
 
-/**
-* 人気記事
-*/
-.popular_article {
-  margin-top: 60px;
+ .block-wrapper h2 {
+   margin: 0 0 5px;
+   letter-spacing: 4px;
+ }
+
+ .front-block-title {
+   width: 100px;
+   height: 1px;
+   background-color: #D0324B;
+   display: block;
+   margin: 0 auto;
+ }
+
+ .front-content-wrapper {
+   padding: 50px 100px 50px;
+   text-align: center;
+ }
+
+ @media screen and (max-width: 994px) {
+   .front-content-wrapper {
+     padding: 50px 60px 50px;
+   }
+ }
+
+ @media screen and (max-width: 800px) {
+   .front-content-wrapper {
+     padding: 40px 50px;
+     margin: 0 auto;
+   }
+ }
+
+ @media screen and (max-width: 768px) {
+   .block-wrapper h2 {
+     font-size: 28px;
+   }
+ }
+
+ @media screen and (max-width: 476px) {
+   .front-content-wrapper {
+     padding: 40px 10px;
+   }
+ }
+
+/*
+news
+ */
+.news-archive-wrap ul {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 40px 0 0;
 }
 
-.popular_article-column a {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+.news-archive-link a {
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 2px;
 }
 
-.popular_article-column:hover {
-  opacity: 0.6;
+.news-archive-link a:hover {
+  color: #D0324B;
 }
 
-.popular_article-column-1:hover h2  {
-  color: #E6B422;
-}
-
-.popular_article-column-2:hover h2 {
-  color: #C0C0C0;
-}
-
-.popular_article-column-3:hover h2 {
-  color: #8C4841;
-}
-
-.popular_article_wrap_title h2 {
-  background-image: url("../images/crown.png");
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
-  padding: 5px 0 0 50px;
-  margin: 0;
-}
-
-.popular_article-column::after {
-  content: '';
-  position: absolute;
-  left: 25%;
-  bottom: 0;
-  width: 50%;
-  border-bottom: solid 1px #2fcdb4;
-}
-
-.popular_article_title {
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  text-align: center;
-  padding: 8px 0;
-  font-size: 20px;
-  font-weight: bold;
-  color: #ffffff;
-  position: absolute;
-  top: -24px;
-  left: 17px;
-}
-
-.popular_article_title-1 {
-  background: #E6B422;
-}
-
-.popular_article_title-2 {
-  background: #C0C0C0;
-}
-
-.popular_article_title-3 {
-  background: #8C4841;
-}
-
-.popular_article_img img {
-  height: 150px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.popular_article-tag {
-  text-align: center;
-  margin-top: 5px;
-  float: left;
-}
-
-.popular_article-tag span {
-  margin: 0 5px;
-  color: #D0324B
-}
-
-.popular_article-wrap {
-  overflow: auto;
-  float: right;
-}
-
-.popular_article-wrap img {
-  height: 40px;
-  width: 40px;
-  float: left;
-}
-
-@media screen and (max-width: 800px) {
-  .popular_article_title {
-    left: 0;
-  }
-
-  .popular_article-column {
-    padding: 0px 0px 20px !important;
-    margin-bottom: 40px !important;
-  }
-}
 /*
 HPブロック
  */
-.HP-content-wrapper {
-  padding: 50px 100px 100px;
-  display: table;
-}
-
-.HP_content_title h2 {
-  background-image: url("../images/pc.png");
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
-  padding: 5px 0 0 50px;
-  margin: 0 0 50px;
-}
-
-.HP-content-column {
+.project-content-column {
   width: calc(100%/3);
   text-align: center;
   padding: 0 40px;
@@ -312,32 +249,32 @@ HPブロック
   position: relative;
 }
 
-.HP-content-column-header {
+.project-content-column-header {
   font-size: 20px;
   font-weight: 800;
   margin-bottom: 14px;
 }
 
-.HP-content-column-header span {
+.project-content-column-header span {
   border-bottom: solid 3px #D0324B;
   padding-bottom: 3px;
 }
 
-.HP_logo {
+.project-logo {
   width: 100px;
 }
 
-.HP-content-column-content {
+.project-content-column-content {
   padding: 12px 30px;
   font-size: 16px;
   height: 120px;
 }
 
-.HP-content-column-button {
+.project-content-column-button {
   margin-top: 30px;
 }
 
-.HP-content-column-button a {
+.project-content-column-button a {
   text-decoration: none;
   background: #2fcbb2;
   color: #ffffff;
@@ -346,61 +283,35 @@ HPブロック
   box-shadow: 2px 2px 4px #202223;
 }
 
-.HP-content-column-button a:hover {
+.project-content-column-button a:hover {
   opacity: 0.5;
   padding: 18px;
 }
 
 @media screen and (max-width: 1198px) {
-  .HP-content-column-content {
+  .project-content-column-content {
     height: 150px;
   }
 
-  .HP-content-column-content {
+  .project-content-column-content {
     padding: 12px 20px;
   }
 }
 
 @media screen and (max-width: 994px) {
-  .HP-content-wrapper {
-    padding: 50px 60px 100px;
-  }
-
-  .HP-content-column {
+  .project-content-column {
     padding: 0 20px;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .HP-content-wrapper {
-    padding: 40px 100px;
-    margin: 0 auto;
-  }
-
-  .HP-content-column {
+  .project-content-column {
     width: 100%;
     padding: 0px 0px 80px;
     display: block;
   }
 
-  .HP-content-column-content {
+  .project-content-column-content {
     height: auto;
   }
-
-  .HP_content_title {
-    text-align: center;
-    width: 230px;
-    margin: 0 auto;
-  }
 }
-
-@media screen and (max-width: 768px) {
-  .HP_content_title h2 {
-    font-size: 28px;
-  }
-}
-
-@media screen and (max-width: 476px) {
-  .HP-content-wrapper {
-    padding: 40px 10px;
-  }

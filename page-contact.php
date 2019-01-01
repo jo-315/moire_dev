@@ -1,5 +1,5 @@
 <?php
-get_header('contact-us');
+get_header('contact');
 ?>
 
 <div class="page_content_block">

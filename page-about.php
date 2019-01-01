@@ -6,7 +6,7 @@ blog,event,orgで同じもの
 ?>
 
 <?php
-get_header('about-us');
+get_header('about');
 ?>
 
   <div class="page_content_block">

@@ -46,73 +46,78 @@
     </div>
 
     <div class="block-wrapper">
-      <div class="HP-content-wrapper">
-        <div class="popular_article_wrap_title">
-          <h2>人気記事</h2>
-          <p>
-            各記事の最後に設置されたいいねボタンをクリックすることで結果が変動します。</br>
-            気に入った記事があったらぜひいいねしてください！
-          </p>
-        </div>
+      <div class="front-content-wrapper">
+        <h2>NEWS</h2>
+        <span class="front-block-title"></span>
 
-        <div class="popular_article">
+        <div class="news-archive-wrap">
           <?php
-            $the_query = new WP_Query(array(
-            	'post_status' => 'published',
-            	'post_type' => 'post',
-            	'orderby' => 'meta_value_num',
-            	'meta_key' => '_liked',
-            	'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1,
-              'posts_per_page'=> '3'
-            ));
-
-            $count = 1;
-
-            while($the_query->have_posts()):$the_query->the_post();
+            $arg = array(
+              'posts_per_page' => 3,
+              'orderby' => 'date',
+              'order' => 'DESC',
+              'category_name' => 'news'
+            );
+            $posts = get_posts( $arg );
+            if( $posts ):
           ?>
 
-          <li class="HP-content-column popular_article-column popular_article-column-<?php echo $count?>">
-            <div class="popular_article_title popular_article_title-<?php echo $count?>">
-              <?php echo $count?>
-            </div>
-            <div class="popular_article_img">
-              <?php the_post_thumbnail('large'); ?>
-            </div>
+          <ul>
+            <?php
+                foreach ( $posts as $post ) :
+                  setup_postdata( $post );
+            ?>
 
-            <div class="popular_article_content">
-              <div class="popular_article-desc">
-                <div class="popular_article-tag">
+            <li>
+              <?php
+                moire_post_thumbnail()
+              ?>
+
+              <div class="entry-header">
+                <div class="archive-content-inner-wrap">
+                  <div class="archive-content-desc">
+                    <div class="archive-item-tag">
+                      <?php
+                        $tags = get_the_tags();
+                        if ($tags) {
+                          foreach($tags as $tag) {
+                            echo '<span>' . $tag->name . '</span>';
+                          }
+                        }
+                      ?>
+                    </div>
+                    <div class="archive-item-author-wrap">
+                      <?php
+                        moire_posted_date()
+                      ?>
+                    </div>
+                  </div>
+
                   <?php
-                    $tags = get_the_tags();
-                    if ($tags) {
-                      foreach($tags as $tag) {
-                        echo '<span>' . $tag->name . '</span>';
-                      }
-                    }
-                  ?>
-                </div>
-                <div class="popular_article-wrap">
-                  <?php
-                    moire_theme_posted_by_no_name()
+                    the_title( '<h3 class="archive-item-title">', '</h3>' );
                   ?>
                 </div>
               </div>
 
-              <?php
-                the_title( '<h2 class="archive-item-title">', '</h2>' );
-              ?>
-            </div>
+              <a
+                href="<?php echo esc_url(get_permalink()) ?>"
+                rel="bookmark"
+              >
+              </a>
+            </li>
 
+            <?php endforeach; ?>
+          </ul>
 
-            <a href="<?php the_permalink(); ?>"></a>
-          </li>
-
-        <?php
-          $count += 1;
-          endwhile;
-        ?>
+          <?php
+            endif;
+            wp_reset_postdata();
+          ?>
         </div>
 
+        <div class="news-archive-link">
+          <a href="/category/news/">NEWS一覧</a>
+        </div>
       </div>
     </div>
 
@@ -122,83 +127,37 @@
     </div>
 
     <div class="block-wrapper">
-      <div class="HP-content-wrapper">
-        <div class="HP_content_title">
-          <h2>コンテンツ</h2>
+      <div class="front-content-wrapper">
+        <div class="project-content_title">
+          <h2>PROJECT</h2>
+          <span class="front-block-title"></span>
         </div>
 
         <div>
-          <div class="HP-content-column">
-            <div class="HP-content-column-header">
-              <span>
-                No Money Action
-              </span>
+          <div class="project-content-column">
+            <div class="project-content-column-header">
+              <h3>
+                ノンマネ
+              </h3>
             </div>
 
-            <div class="HP-content-column-logo">
+            <div class="project-content-column-logo">
               <img
                 data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/blog_logo.svg"
-                class="HP_logo lazyload"
+                class="project-logo lazyload"
               >
             </div>
 
-            <div class="HP-content-column-content">
+            <div class="project-content-column-content">
               No Money Action についての記事を掲載し、発信していきます。
             </div>
 
-            <div class="HP-content-column-button">
+            <div class="project-content-column-button">
               <a href='/category/article/'>
                 No Money Action へ
               </a>
             </div>
           </div>
-
-          <div class="HP-content-column">
-            <div class="HP-content-column-header">
-              <span>団体情報一覧</span>
-            </div>
-
-            <div class="HP-content-column-logo">
-              <img
-                data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/team_logo.svg"
-                class="HP_logo lazyload"
-              >
-            </div>
-
-            <div class="HP-content-column-content">
-              社会貢献活動を行う団体の情報を手軽に見れるようにし、団体の活動参加を容易にします。
-            </div>
-
-            <div class="HP-content-column-button">
-              <a href='/category/organization/'>
-                団体一覧へ
-              </a>
-            </div>
-          </div>
-
-          <div class="HP-content-column">
-            <div class="HP-content-column-header">
-              <span>イベント情報一覧</span>
-            </div>
-
-            <div class="HP-content-column-logo">
-              <img
-                data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/event_logo.svg"
-                class="HP_logo lazyload"
-              >
-            </div>
-
-            <div class="HP-content-column-content">
-              社会貢献活動のイベントも発信し、より社会貢献活動に参加しやすい環境を作ります。
-            </div>
-
-            <div class="HP-content-column-button">
-              <a href='/category/event'>
-                イベント情報一覧へ
-              </a>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
