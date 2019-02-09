@@ -56,19 +56,9 @@ jQuery(function($) {
 
   if (window.matchMedia( "(min-width: 480px)" ).matches) {
     add_circle()
-    // setInterval(add_circle, 2000);
+    setInterval(add_circle, 2000);
   } else {
     add_circle()
-    // setInterval(add_circle, 3000);
+    setInterval(add_circle, 3000);
   }
 });
-
-/*
-### Footer
- */
-// scroll to top
-jQuery(function($) {
-  $('.site-info').click(() => {
-    $('html, body').animate({ scrollTop: 0 });
-  })
-})

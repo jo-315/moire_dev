@@ -228,50 +228,57 @@ news
   margin: 40px 0 0;
 }
 
+.news-archive-link {
+  margin-top: 60px;
+}
+
 .news-archive-link a {
-  text-decoration: none;
+  text-decoration: underline;
   font-size: 18px;
-  letter-spacing: 2px;
 }
 
 .news-archive-link a:hover {
   color: #D0324B;
 }
 
+@media screen and (max-width: 524px) {
+  .news-archive-link {
+    margin-top: 20px;
+  }  
+}
+
 /*
 HPブロック
  */
+
+.project-content-column-wrap {
+  margin: 40px 0;
+}
+
 .project-content-column {
-  width: calc(100%/3);
+  width: 600px;
   text-align: center;
-  padding: 0 40px;
-  display: table-cell;
   position: relative;
+  margin: 0 auto;
 }
 
-.project-content-column-header {
-  font-size: 20px;
-  font-weight: 800;
-  margin-bottom: 14px;
-}
-
-.project-content-column-header span {
-  border-bottom: solid 3px #D0324B;
-  padding-bottom: 3px;
+.project-content-column-wrap h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .project-logo {
-  width: 100px;
+  width: 150px;
 }
 
 .project-content-column-content {
-  padding: 12px 30px;
+  padding: 0 30px;
   font-size: 16px;
-  height: 120px;
 }
 
 .project-content-column-button {
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .project-content-column-button a {
@@ -280,19 +287,16 @@ HPブロック
   color: #ffffff;
   padding: 15px 15px;
   border-radius: 5px;
-  box-shadow: 2px 2px 4px #202223;
+  box-shadow: 2px 2px 10px -3px #202223;
 }
 
 .project-content-column-button a:hover {
-  opacity: 0.5;
   padding: 18px;
+  color: #2fcbb2;
+  background: #ffffff;
 }
 
 @media screen and (max-width: 1198px) {
-  .project-content-column-content {
-    height: 150px;
-  }
-
   .project-content-column-content {
     padding: 12px 20px;
   }
@@ -307,7 +311,7 @@ HPブロック
 @media screen and (max-width: 800px) {
   .project-content-column {
     width: 100%;
-    padding: 0px 0px 80px;
+    padding: 0;
     display: block;
   }
 

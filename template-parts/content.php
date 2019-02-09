@@ -1,9 +1,3 @@
-<?php
-/*
-カテゴリー毎、投稿一覧内のアイテム
-*/
-?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'blog-post' ); ?>>
 	<?php
 		moire_post_thumbnail()
@@ -12,16 +6,6 @@
 	<div class="entry-header">
     <div class="archive-content-inner-wrap">
 			<div class="archive-content-desc">
-				<div class="archive-item-tag">
-		      <?php
-						$tags = get_the_tags();
-						if ($tags) {
-							foreach($tags as $tag) {
-								echo '<span>' . $tag->name . '</span>';
-							}
-						}
-					?>
-				</div>
 				<div class="archive-item-author-wrap">
 					<?php
 						moire_posted_date()
@@ -34,7 +18,6 @@
 			?>
 		</div>
 	</div>
-
 
 	<a
 	  href="<?php echo esc_url(get_permalink()) ?>"

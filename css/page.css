@@ -1,15 +1,24 @@
 /* 固定pageのcss */
-
 .page_content_block {
   width: 100%;
   background: #ffffff;
   text-align: center;
   font-size: 17px;
   padding: 50px 10px;
+  box-shadow: 3px 0px 5px 2px;
 }
 
 .page_content_block h3 {
-  border-bottom: solid 2px #D0324B;
+  border-bottom: solid 2px #2fcbb2;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.page_main_text {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
 }
 
 .page_content--text {
@@ -18,15 +27,6 @@
 }
 
 @media screen and (max-width: 650px) {
-  .page_content_block h1 {
-    font-size: 30px;
-    margin: 15px 0;
-  }
-
-  .about_content_wrap {
-    margin: 30px 0 70px;
-  }
-
   .page_content--text {
     width: 100%;
     padding: 0 20px;
@@ -37,6 +37,12 @@
   }
 }
 
+@media screen and (max-width: 550px) {
+  .page_content_block {
+    padding: 10px;
+  }
+}
+
 /*
 About Us
  */
@@ -44,43 +50,16 @@ About Us
   border-bottom: solid #2fcbb2;
 }
 
-.about_sub_title {
-  width: 550px;
-  margin: 0 auto;
-}
-
-.about_sub_title h2 {
-  font-weight: bold;
-  margin: 0;
-}
-
-@media screen and (max-width: 550px) {
-  .page_content_block {
-    padding: 10px;
-  }
-
-  .about_sub_title {
-    width: 96%;
-  }
+.about_content_block--title h2 {
+  margin-bottom: 10px;
 }
 
 /* ABOUT US */
 .about_content_wrap {
-  margin: 50px 0 70px;
-}
-
-/* MISSION  */
-.mission-wrap span,
-.activity-desc span {
-  font-size: 27px;
-  font-weight: bold;
-}
-
-/* activity */
-.activity_content {
-  line-height: 35px;
+  margin: 0 0 40px;
   text-align: left;
-  margin-top: 30px;
+  font-size: 16px;
+  color: #373735;
 }
 
 /* 団体概要 */
@@ -95,66 +74,44 @@ About Us
   color: #f6f6f6;
 }
 
-@media screen and (max-width: 650px) {
-  .mission-wrap span,
-  .activity-desc span {
-    font-size: 20px;
-  }
-}
-
 @media screen and (max-width: 550px) {
   .desc_table {
     width: 96%;
   }
+}
 
-  .desc_title h1 {
-    font-size: 30px;
-    margin: 10px 0;
-  }
+/* project */
+.project_icon {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.project_icon img {
+  width: 100%;
+}
+
+.project_img {
+  margin: 0 auto 10px;
+  box-shadow: 3px 3px 10px -3px;
+}
+
+.project_img img {
+  width: 100%;
 }
 
 /* Recruit */
-.recruit_title {
-  margin-bottom: 50px;
-}
-
-.recruit_title h1 {
-  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
-  font-size: 24px;
-}
-
-.contribution_title {
-  margin-bottom: 60px;
-}
-
-.contribution_title h1 {
-  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
-  font-size: 30px;
-}
-
-.recruit_text {
-  font-size: 17px;
-  text-align: left;
-}
-
-.recruit_text div {
-  text-align: center;
-}
-
-.recruit_text a {
-}
-
 .recruit_detail {
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 .recruit_detail ul {
   padding: 5px 0;
-  margin: 0;
+  margin: 30px 0 0;
 }
 
 .recruit_detail li {
   list-style: none;
+  color: #373735;
 }
 
 .recruit_detail li:nth-child(odd) {
@@ -162,21 +119,18 @@ About Us
   width: 200px;
   margin: 0 auto;
   border-bottom: solid #2fcbb2;
+  font-size: 16px;
 }
 
 .recruit_detail li:nth-child(even) {
   text-align: left;
   padding: 20px 0;
+  font-size: 15px;
 }
 
 .recruit_detail .last{
   text-align: center !important;
 }
-
-.recruit_between {
-  height: 40px;
-}
-
 
 /* Contact */
 .wpcf7-form .wpcf7-text,
@@ -191,7 +145,6 @@ About Us
     width: 96%;
   }
 }
-
 
 /* Member */
 .member_content_wrap {

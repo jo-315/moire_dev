@@ -2203,11 +2203,6 @@ div.sharedaddy h3.sd-title:before {
 		width: auto;
 	}
 
-	.footer-back-top {
-		width: auto;
-		margin-top: 0;
-	}
-
 	/*-----------
      * Posts and pages
      -----------*/
@@ -2764,7 +2759,7 @@ topのナビゲーション
 }
 
 .header-main-navigation-items-wrap--member {
-	width: 150% !important;
+	width: 170% !important;
 	letter-spacing: 1px;
 }
 
@@ -3061,21 +3056,10 @@ widget
  .site-info {
  	text-align: center;
  	font-size: 12px;
- 	font-size: 0.857em;
  	letter-spacing: 1px;
- 	padding: 30px 0;
- 	background: #373735;
- }
-
- .site-info:hover {
- 	opacity: 0.5;
- cursor: pointer;
- }
-
- .site-info a {
- 	letter-spacing: 0;
- 	text-transform: none;
- 	letter-spacing: 1px;
+ 	padding: 5px 0;
+	 background: #373735;
+	 color: #ffffff;
  }
 
 /*
@@ -3085,7 +3069,8 @@ footer
    background: #2fcbb2;
    height: 100px;
    position: relative;
-   overflow: hidden;
+	 overflow: hidden;
+	 z-index: -1;
  }
 
  .between_content_effect {
@@ -3093,59 +3078,87 @@ footer
    height: 100%;
  }
 
- /*
- SNSブロック
-  */
-
- .sns-block-wrapper {
-   position: relative;
-   background: #ffffff;
-   box-shadow: 3px 0px 5px 2px;
-   z-index: 999;
-	 padding: 5px 2%;
-	 height: 60px;
- }
-
-.sns-block-wrapper span {
-	font-family: 'klee',sans-serif;
-}
-
-.sns-social-wrap {
-  text-decoration: none;
-	margin-right: 5px;
-}
-
-.sns-social-wrap:hover {
-	opacity: 0.6;
-	top: 3px;
-}
-
- .sns-social-icon {
-	 width: 50px;
- }
-
- /*
+/*
  main footer
   */
 
- .footer-moire-desc-header {
-   text-align: center;
-   font-size: 16px;
-   margin-bottom: 5px;
-   font-weight: bold;
- }
- /*
- widget
-  */
+	.footer-moire-desc {
+		width: calc(100% - 50px);
+		float: left;
+		padding-left: 10px;
+	}
+ 
+	.footer-moire-desc-header {
+		font-size: 16px;
+		margin-bottom: 5px;
+		font-weight: bold;
+	}
 
-  .footer-widget-wrap {
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-right: 10px;
-    padding-left: 30px;
-    width: 25%;
-  }
+	.footer_moire_sns {
+		margin-top: 10px;
+	}
+
+	.sns-social-wrap {
+		text-decoration: none;
+		margin-right: 1px;
+		float: left;
+	}
+	 
+	.sns-social-wrap:hover {
+	  opacity: 0.6;
+	}
+	
+	.sns-social-icon {
+		width: 25px;
+		margin-right: 5px;
+	}	
+
+	/*
+ widget
+	*/
+	.footer_navigation {
+		width: 60%;
+		float: left;
+		padding-left: 45px;
+	}
+
+	.footer_nav_column {
+		display: inline-block;
+		vertical-align: top;
+		width: calc(100%/3 - 10px);
+	}
+
+	.footer_nav_column_title {
+		font-size: 15px;
+		color: #ffffff;
+	}
+
+	.footer_nav_column_title a {
+		font-size: 15px;
+		color: #ffffff !important;
+	}
+
+	.footer_nav_column  ul {
+		padding: 5px 0 0 10px;
+		margin: 0 0 20px;
+	}
+
+	.footer_nav_column  li {
+		list-style: none;
+		margin-bottom: 2px;
+	}
+
+	.footer_nav_column  a {
+		color: #cccccc;
+	}
+
+	.footer_nav_column  a:hover {
+		color: #2fcbb2;
+	}
+
+	.footer_nav_column  p {
+		margin-top: 0;
+	}
 
   .site-footer .widget-title {
     background: #575756;
@@ -3159,7 +3172,7 @@ footer
   }
 
   .container-footer {
-    padding-top: 60px;
+    padding: 20px 30px 0;
   }
 
   .footer-inner:before,
@@ -3167,40 +3180,49 @@ footer
     display: table;
     content: " ";
     clear: both;
-  }
+	}
+	
+	.footer-moire-wrap {
+		width: 40%;
+		float: left;
+	}
 
-   .footer-back-top {
-     /* ここにjquery */
-   	width: 100%;
-     margin-top: -10px;
-     text-align: center;
-   }
+	.footer-moire-img {
+		width: 50px;
+		height: 60px;
+		float: left;
+	}
 
-  @media screen and (min-width: 1140px) {
-   .footer-widget-wrap {
-     padding-right: 60px;
-     padding-left: 60px;
-   }
-  }
-
-  @media screen and (max-width: 992px) {
-    .footer-widget-wrap {
-      padding-right: 20px;
-      padding-left: 20px;
-    }
-  }
+	.footer-moire-logo {
+		width: 100%;
+		height: 100%;
+	}
 
   @media screen and (max-width: 700px) {
-    .footer-widget-wrap {
-      padding-right: 40px;
-      padding-left: 40px;
-    }
+    .footer_navigation {
+			padding: 0;
+		}
+	}
 
-    .footer-widget-wrap {
-      width: 50%;
-      height: 450px;
-    }
+  @media screen and (max-width: 596px) {
+    .footer_nav_column {
+			display: none;
+		}
 
+		.footer-moire-wrap {
+			width: 350px;
+			margin: 0 auto;
+			float: none;
+		}
+	}
+
+  @media screen and (max-width: 350px) {
+    .footer-moire-wrap {
+			width: 100%;
+		}
+	}
+
+  @media screen and (max-width: 700px) {
     .footer-widget-img {
       width: 200px;
       margin: 0 auto;
@@ -3212,30 +3234,10 @@ footer
       padding: 0px 0px 35px;
     }
 
-    .footer-widget-wrap {
-      padding-right: 0px;
-      padding-left: 0px;
-    }
-
-    .footer-widget-img {
+		.footer-widget-img {
       width: 150px;
       margin: 0 auto;
     }
-
-    .footer-widget-wrap {
-      width: 350px;
-      height: auto;
-      float: none;
-      margin: 0 auto;
-    }
-
- }
-
- @media screen and (max-width: 380px) {
-   .footer-widget-wrap {
-     width: 300px;
-     height: auto;
-   }
  }
 
  /* Share button */
@@ -3413,7 +3415,7 @@ archive
  }
 
  .entry-header {
- 	padding: 30px 0;
+ 	padding: 10px 0 30px;
  }
 
  .archive-content-inner-wrap {
@@ -3445,33 +3447,6 @@ archive
 .archive-content-desc {
   margin: 5px 0;
   overflow: auto;
-}
-
- /*
- Tag
-  */
- .archive-item-tag {
- 	text-align: center;
-  float: left;
- }
-
- .archive-item-tag span {
- 	margin: 0 5px;
-   color: #D0324B
- }
-
- /*
- author
-  */
-.archive-item-author-wrap {
-  overflow: auto;
-  float: right;
-}
-
-.archive-item-author-wrap img {
-  height: 40px;
-  width: 40px;
-  float: left;
 }
 
  /*

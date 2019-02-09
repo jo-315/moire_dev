@@ -76,21 +76,9 @@
               <div class="entry-header">
                 <div class="archive-content-inner-wrap">
                   <div class="archive-content-desc">
-                    <div class="archive-item-tag">
-                      <?php
-                        $tags = get_the_tags();
-                        if ($tags) {
-                          foreach($tags as $tag) {
-                            echo '<span>' . $tag->name . '</span>';
-                          }
-                        }
-                      ?>
-                    </div>
-                    <div class="archive-item-author-wrap">
-                      <?php
-                        moire_posted_date()
-                      ?>
-                    </div>
+                    <?php
+                      moire_posted_date()
+                    ?>
                   </div>
 
                   <?php
@@ -133,32 +121,35 @@
           <span class="front-block-title"></span>
         </div>
 
-        <div>
+        <div class="project-content-column-wrap">
           <div class="project-content-column">
-            <div class="project-content-column-header">
-              <h3>
-                ノンマネ
-              </h3>
-            </div>
-
             <div class="project-content-column-logo">
               <img
-                data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/blog_logo.svg"
+                data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/NonMoney.png"
                 class="project-logo lazyload"
               >
             </div>
 
+            <h3>
+              ノンマネ
+            </h3>
+
             <div class="project-content-column-content">
-              No Money Action についての記事を掲載し、発信していきます。
+            「お金ではない価値を持ち、それでいてただの娯楽ではない活動」・ノンマネを発信し、もっと多くの人を社会貢献活動に繋げていきます。
             </div>
 
             <div class="project-content-column-button">
-              <a href='/category/article/'>
-                No Money Action へ
+              <a href='https://non-mone.com' target="_blank">
+                ノンマネへ
               </a>
             </div>
           </div>
         </div>
+
+        <div class="news-archive-link">
+          <a href="/project/">プロジェクト一覧</a>
+        </div>
+
       </div>
     </div>
   </div>

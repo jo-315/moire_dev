@@ -1,6 +1,3 @@
-<?php
-// ヘッダーのナビゲーション
-?>
 <div class="header-inner-top">
   <div class="header-logo-wrap">
     <a href="/">
@@ -31,19 +28,19 @@
           </a>
         </li>
         <li>
-          <a href="/about">
-            ABOUT
+          <a>
+            PROJECT
           </a>
           <div class="header-main-navigation-child header-main-navigation-items-wrap--member">
             <ul>
               <li>
-                <a href="/about">
-                  ABOUT
+                <a href="/project/">
+                  プロジェクト一覧
                 </a>
               </li>
               <li>
-                <a href="/member">
-                  MEMBEER
+                <a href="https://non-mone.com/" target="_blank">
+                  ノンマネ
                 </a>
               </li>
             </ul>
@@ -51,13 +48,18 @@
         </li>
         <li>
           <a>
-            PROJECT
+            ABOUT
           </a>
-          <div class="header-main-navigation-child">
+          <div class="header-main-navigation-child header-main-navigation-items-wrap--member">
             <ul>
               <li>
-                <a href="#">
-                  ノンマネ
+                <a href="/about">
+                  私たちについて
+                </a>
+              </li>
+              <li>
+                <a href="/member">
+                  メンバー
                 </a>
               </li>
             </ul>
