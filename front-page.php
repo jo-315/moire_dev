@@ -17,32 +17,6 @@
           </div>
         </div>
       </div>
-
-      <div class="right-top-column">
-        <div class="right-top-column-content">
-          <span>
-            <div class='right-top-column-content-title'>
-            moire(モアレ)
-            </div>
-            <p>
-              私たちmoireのMissionは、<span class='font-bold'>社会貢献活動の促進</span>です。
-            </p>
-            <p>
-              このMission達成のために私たちは、お金を目的にしない活動 <span class='font-bold'>「No Money Action」</span> をHPで発信していきます。
-            </p>
-
-            <p>
-              No Money Action の中で社会貢献活動についても発信することで、社会貢献活動に関心のない人を社会貢献活動に繋いでいきます。
-            </p>
-          </span>
-        </div>
-
-        <div class="mission-button-wrap">
-          <div class="mission-button">
-            <a href="/about-us">moireの基本理念</a>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="block-wrapper">

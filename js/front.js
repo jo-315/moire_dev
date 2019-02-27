@@ -44,17 +44,6 @@ jQuery(function($) {
       return $(".moire-title").fadeIn(4000)
     }).then(() => {
       $(".moire-sub-title").fadeIn(5000)
-    }).then(() => {
-      setTimeout(() => {
-        setInterval(add_random_circle, 2000);
-        $('.content-effect-wrapper')
-          .animate({ 'width': '60%' })
-          .css('float', 'left')
-        $('.right-top-column')
-          .css('display', 'block')
-          .animate({'width':'40%'})
-      }, 3500);
-
       return
     })
   } else {
@@ -66,13 +55,6 @@ jQuery(function($) {
       return $(".moire-title").fadeIn(1500)
     }).then(() => {
       $(".moire-sub-title").fadeIn(2500)
-    }).then(() => {
-      setTimeout(() => {
-        $('.right-top-column')
-          .animate({'width':'100%'})
-          .css('display', 'block')
-      }, 2000);
-
       return
     })
   }
