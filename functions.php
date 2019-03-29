@@ -260,3 +260,16 @@ function moire_read_more_link() {
 add_filter( 'excerpt_more', 'moire_excerpt_more' );
 
 add_filter( 'the_content_more_link', 'moire_read_more_link' );
+
+// ユーザープロフィールの項目のカスタマイズ
+function my_user_meta($wb)
+{
+//項目の追加
+$wb['twitter'] = 'twitter';
+$wb['instagram'] = 'instagram';
+$wb['facebook'] = 'facebook';
+$wb['position'] = '役職';
+
+return $wb;
+}
+add_filter('user_contactmethods', 'my_user_meta', 10, 1);
