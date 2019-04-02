@@ -178,10 +178,12 @@ HPブロック
 
 .project-content-column-wrap {
   margin: 40px 0;
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
 }
 
 .project-content-column {
-  width: 600px;
   text-align: center;
   position: relative;
   margin: 0 auto;
@@ -195,6 +197,10 @@ HPブロック
 
 .project-logo {
   width: 150px;
+}
+
+.project-img {
+  height: 150px;
 }
 
 .project-content-column-content {
@@ -234,6 +240,15 @@ HPブロック
 }
 
 @media screen and (max-width: 800px) {
+  .project-content-column-wrap {
+    display: block;
+    width: 100%;
+  }
+
+  .project-content-column-wrap__weekend {
+    margin-top: 80px;
+  }
+
   .project-content-column {
     width: 100%;
     padding: 0;

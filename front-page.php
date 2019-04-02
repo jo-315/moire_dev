@@ -78,7 +78,7 @@
         </div>
 
         <div class="news-archive-link">
-          <a href="/category/news/">NEWS一覧</a>
+          <a href="/category/news/" class="moire-button">NEWS一覧</a>
         </div>
       </div>
     </div>
@@ -120,8 +120,28 @@
           </div>
         </div>
 
+        <div class="project-content-column-wrap project-content-column-wrap__weekend">
+          <div class="project-content-column">
+            <div class="project-content-column-logo">
+              <img
+                data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/weekend.png"
+                class="project-img lazyload"
+              >
+            </div>
+
+            <h3>
+              週末キャラバン
+            </h3>
+
+            <div class="project-content-column-content">
+              若者が週末の地域の活動に参加しやすくなるように、若者と地域の活動を繋ぐプロジェクトです。
+            </div>
+
+          </div>
+        </div>
+
         <div class="news-archive-link">
-          <a href="/project/">プロジェクト一覧</a>
+          <a href="/project/" class="moire-button">プロジェクト一覧</a>
         </div>
 
       </div>

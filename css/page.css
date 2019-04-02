@@ -39,7 +39,7 @@
 
 @media screen and (max-width: 550px) {
   .page_content_block {
-    padding: 10px;
+    padding: 10px 10px 30px;
   }
 }
 
@@ -60,6 +60,14 @@ About Us
   text-align: left;
   font-size: 16px;
   color: #373735;
+}
+
+.about_content_wrap__weekend {
+  margin-top: 30px;
+}
+
+.about_content_wrap__weekend_fb {
+  margin-top: 50px;
 }
 
 /* 団体概要 */
@@ -93,10 +101,27 @@ About Us
 .project_img {
   margin: 0 auto 10px;
   box-shadow: 3px 3px 10px -3px;
+  height: 350px;
+}
+
+.project_img__nonmeney {
+  margin-bottom: 30px;
+}
+
+.project_img__nonmeney img {
+  object-position: top;
 }
 
 .project_img img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 550px) {
+  .project_img {
+    height: 200px;
+  }
 }
 
 /* Recruit */
