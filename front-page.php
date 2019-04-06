@@ -105,11 +105,11 @@
             </div>
 
             <h3>
-              ノンマネ
+              Webメディア・ノンマネ
             </h3>
 
             <div class="project-content-column-content">
-            「お金ではない価値を持ち、それでいてただの娯楽ではない活動」・ノンマネを発信し、もっと多くの人を社会貢献活動に繋げていきます。
+            「お金ではない価値を持ち、それでいてただの娯楽ではない活動」・ノンマネをWebメディアで発信し、もっと多くの人を社会貢献活動に繋げていきます。
             </div>
 
             <div class="project-content-column-button">
@@ -137,6 +137,11 @@
               若者が週末の地域の活動に参加しやすくなるように、若者と地域の活動を繋ぐプロジェクトです。
             </div>
 
+            <div class="project-content-column-button">
+              <a href='https://www.facebook.com/pg/moire12/events/' target="_blank">
+                週末キャラバン一覧へ
+              </a>
+            </div>
           </div>
         </div>
 
