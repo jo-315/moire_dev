@@ -303,7 +303,7 @@ button,
 input,
 select,
 textarea {
-	color: #6f6e6b;
+	color: #373735;
 	font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 	font-size: 16px;
 	line-height: 1.75;
@@ -2646,7 +2646,7 @@ div.sharedaddy h3.sd-title:before {
 
 /* 下に移行していく */
 body {
-	color: #6f6e6b;
+	color: #373735;
   background: #f6f6f6;
 	font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 	font-size: 16px;

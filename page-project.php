@@ -51,7 +51,7 @@ get_header('project');
 
       <div class="project_img">
         <img
-          src="<?php echo get_stylesheet_directory_uri(); ?>/images/weekend_photo.jpg"
+          src="<?php echo get_stylesheet_directory_uri(); ?>/images/weekend.png"
         >
       </div>
 
