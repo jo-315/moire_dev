@@ -5,15 +5,18 @@
       <div class="content-effect-wrapper">
         <div class="content-effect">
           <div class='main-content'>
-            <div class="moire-title-wrap">
-              <span class='moire-title'>
-                moire
-              </span>
+            <img
+              data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/moire_front.png"
+              class="moire-header-img lazyload"
+            >
 
-              <span class="moire-sub-title">
-                社会貢献活動に繋ぐWebメディア
-              </span>
-            </div>
+            <span class='moire-title'>
+              moire
+            </span>
+
+            <span class="moire-sub-title">
+              社会貢献が身近にある社会に
+            </span>
           </div>
         </div>
       </div>
@@ -115,6 +118,31 @@
             <div class="project-content-column-button">
               <a href='https://non-mone.com' target="_blank">
                 ノンマネへ
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-content-column-wrap">
+          <div class="project-content-column">
+            <div class="project-content-column-logo">
+              <img
+                data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/nonmoney_planning.png"
+                class="project-img lazyload"
+              >
+            </div>
+
+            <h3>
+              ノンマネ企画部
+            </h3>
+
+            <div class="project-content-column-content">
+              ノンマネとなるイベントを開催することで、ノンマネをより広めていきます。
+            </div>
+
+            <div class="project-content-column-button">
+              <a href='https://www.facebook.com/pg/moire12/events/' target="_blank">
+                ノンマネ企画部イベント一覧へ
               </a>
             </div>
           </div>

@@ -25,7 +25,6 @@ jQuery(function($) {
       effect: "drops-css",
       effectOptions: {
         radius: 200,
-        width: Math.random() * 10,
         duration: 1e3 + Math.random() * 1e3,
         color: '#ffffff',
         opacity: 0.3
@@ -41,9 +40,16 @@ jQuery(function($) {
         resolve(add_first_circle())
       }, 300)
     }).then(() => {
-      return $(".moire-title").fadeIn(4000)
+      $(".moire-title").fadeIn(4000)
+      return
     }).then(() => {
       $(".moire-sub-title").fadeIn(5000)
+      return
+    }).then(() => {
+      $(".moire-header-img").fadeIn(5000)
+      return
+    }).then(() => {
+      setInterval(add_random_circle, 2500);
       return
     })
   } else {
@@ -52,9 +58,13 @@ jQuery(function($) {
         resolve(add_first_circle())
       }, 300)
     }).then(() => {
-      return $(".moire-title").fadeIn(1500)
+      $(".moire-title").fadeIn(1500)
+      return
     }).then(() => {
       $(".moire-sub-title").fadeIn(2500)
+      return
+    }).then(() => {
+      $(".moire-header-img").fadeIn(2500)
       return
     })
   }

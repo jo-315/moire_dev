@@ -57,15 +57,15 @@
 				<div class="footer-moire-wrap">
 					<div class="footer-moire-img">
 						<img
-							src="<?php echo get_stylesheet_directory_uri(); ?>/images/moire_logo.svg"
-							class="footer-moire-logo"
+							data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/moire_logo.svg"
+							class="footer-moire-logo lazyload"
 						>
 					</div>
 
 					<div class="footer-moire-desc">
 						<span class="footer-moire-desc-header">
-							moire</br>
-							社会貢献活動に繋ぐWebメディア</br>
+							moire（モアレ）</br>
+							社会貢献活が身近にある社会をつくる団体</br>
 						</span>
 						<div class="footer_moire_sns">
 							<a
@@ -74,9 +74,9 @@
 								class="sns-social-wrap"
 							>
 								<img
-									src="https://moire.xsrv.jp/wp-content/uploads/Twitter_Social_Icon_Rounded_Square_Color.png"
+									data-src="https://moire.xsrv.jp/wp-content/uploads/Twitter_Social_Icon_Rounded_Square_Color.png"
 									alt="Twitter"
-									class="sns-social-icon"
+									class="sns-social-icon lazyload"
 								/>
 							</a>
 
@@ -86,9 +86,9 @@
 								class="sns-social-wrap"
 							>
 								<img
-									src="https://moire.xsrv.jp/wp-content/uploads/f-ogo_RGB_HEX-100.png"
+									data-src="https://moire.xsrv.jp/wp-content/uploads/f-ogo_RGB_HEX-100.png"
 									alt="Facebook"
-									class="sns-social-icon"
+									class="sns-social-icon lazyload"
 								/>
 							</a>
 						</div>

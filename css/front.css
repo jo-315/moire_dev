@@ -30,6 +30,15 @@
 .main-content {
   width: 100%;
   height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.moire-header-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
 }
 
 .moire-title-wrap {
@@ -114,19 +123,16 @@
  }
 
  .front-content-wrapper {
-   padding: 50px 100px 50px;
+   padding: 50px 0;
+   margin: 0 auto;
    text-align: center;
- }
-
- @media screen and (max-width: 994px) {
-   .front-content-wrapper {
-     padding: 50px 60px 50px;
-   }
+   max-width: 1800px;
+   width: 100%;
  }
 
  @media screen and (max-width: 800px) {
    .front-content-wrapper {
-     padding: 40px 50px;
+     padding: 40px 0;
      margin: 0 auto;
    }
  }
@@ -169,7 +175,7 @@ news
 @media screen and (max-width: 524px) {
   .news-archive-link {
     margin-top: 20px;
-  }  
+  }
 }
 
 /*
@@ -179,7 +185,7 @@ HPブロック
 .project-content-column-wrap {
   margin: 40px 0;
   display: inline-block;
-  width: 49%;
+  width: calc(98% / 3);
   vertical-align: top;
 }
 
@@ -207,7 +213,8 @@ HPブロック
   padding: 0 30px;
   font-size: 16px;
   text-align: left;
-  height: 100px;
+  height: 125px;
+  margin: 20px 0;
 }
 
 .project-content-column-button {
@@ -240,14 +247,20 @@ HPブロック
   .project-content-column {
     padding: 0 20px;
   }
-}
 
-@media screen and (max-width: 800px) {
   .project-content-column-wrap {
     display: block;
     width: 100%;
+    max-width: 600px;
+    margin: 0 auto 100px;
   }
 
+  .project-content-column-content {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .project-content-column-wrap__weekend {
     margin-top: 80px;
   }
@@ -258,7 +271,4 @@ HPブロック
     display: block;
   }
 
-  .project-content-column-content {
-    height: auto;
-  }
 }

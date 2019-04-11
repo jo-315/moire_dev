@@ -10,7 +10,8 @@ get_header('project');
 
       <div class="project_icon">
         <img
-          src="<?php echo get_stylesheet_directory_uri(); ?>/images/NonMoney.png"
+          data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/NonMoney.png"
+          class="lazyload"
         >
       </div>
 
@@ -23,12 +24,45 @@ get_header('project');
 
       <div class="project_img project_img__nonmeney">
         <img
-          src="<?php echo get_stylesheet_directory_uri(); ?>/images/nonmoney_screen.png"
+          data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/nonmoney_screen.png"
+          class="lazyload"
         >
       </div>
 
       <a href='https://non-mone.com' target="_blank" class="moire-button">
         ノンマネへ
+      </a>
+    </div>
+  </div>
+
+  <div class="between_content">
+    <div class="between_content_effect">
+    </div>
+  </div>
+
+  <div class="page_content_block">
+    <div class="page_content--text">
+      <div class="about_content_block--title">
+        <h2>ノンマネ企画部</h2>
+      </div>
+
+      <div class="about_content_wrap about_content_wrap__weekend">
+        ノンマネとなるイベントを開催することで、ノンマネをより広めていきます。そして、ノンマネが広がっていく中で社会貢献に関心を持つ人を増やしていきます。
+      </div>
+
+      <div class="project_img">
+        <img
+          data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/nonmoney_planning.png"
+          class="lazyload"
+        >
+      </div>
+
+      <div class="about_content_wrap about_content_wrap__weekend_fb">
+        ノンマネ企画部の日程はFacebookページで管理しています。まずはFacebookページをご覧ください！
+      </div>
+
+      <a href='https://www.facebook.com/pg/moire12/events/' target="_blank" class="moire-button">
+        Facebookページへ
       </a>
     </div>
   </div>
@@ -51,12 +85,13 @@ get_header('project');
 
       <div class="project_img">
         <img
-          src="<?php echo get_stylesheet_directory_uri(); ?>/images/weekend.png"
+          data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/weekend.png"
+          class="lazyload"
         >
       </div>
 
       <div class="about_content_wrap about_content_wrap__weekend_fb">
-        週末キャラバンはFacebookページで管理しています。まずはFacebookページをご覧ください！
+        週末キャラバンの日程はFacebookページで管理しています。まずはFacebookページをご覧ください！
       </div>
 
       <a href='https://www.facebook.com/pg/moire12/events/' target="_blank" class="moire-button">

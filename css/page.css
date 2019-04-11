@@ -116,6 +116,7 @@ About Us
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: bottom;
 }
 
 @media screen and (max-width: 550px) {
