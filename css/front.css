@@ -80,6 +80,7 @@
     left: calc(50% - 150px);  }
 
   .moire-sub-title {
+    font-size: 20px;
     left: calc(50% - 200px);
     width: 400px;
   }
@@ -90,11 +91,6 @@
     width: 200px;
     top: calc(50% - 75px);
     left: calc(50% - 100px);
-  }
-
-  .moire-sub-title {
-    left: calc(50% - 150px);
-    width: 300px;
   }
 }
 

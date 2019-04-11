@@ -15,7 +15,7 @@
             </span>
 
             <span class="moire-sub-title">
-              社会貢献が身近にある社会に
+              社会貢献が身近にある社会をつくる
             </span>
           </div>
         </div>
