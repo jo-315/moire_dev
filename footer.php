@@ -1,7 +1,3 @@
-<?php
-// 全ページ共通フッター
-?>
-
 	<div class="between_content">
 		<div class="between_content_effect">
 		</div>
@@ -39,7 +35,17 @@
 						<ul>
 							<li>
 								<a href="https://non-mone.com/" target="_blank">
-									ノンマネ
+									Webメディア・ノンマネ
+								</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/pg/moire12/events/" target="_blank">
+									ノンマネ企画部
+								</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/pg/moire12/events/" target="_blank">
+									週末キャラバン
 								</a>
 							</li>
 						</ul>
@@ -65,7 +71,7 @@
 					<div class="footer-moire-desc">
 						<span class="footer-moire-desc-header">
 							moire（モアレ）</br>
-							社会貢献活が身近にある社会をつくる団体</br>
+							社会貢献が身近にある社会をつくる団体</br>
 						</span>
 						<div class="footer_moire_sns">
 							<a

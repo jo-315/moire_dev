@@ -15,7 +15,7 @@
             </span>
 
             <span class="moire-sub-title">
-              社会貢献が身近にある社会をつくる
+              社会貢献が身近にある社会づくり
             </span>
           </div>
         </div>
@@ -112,12 +112,12 @@
             </h3>
 
             <div class="project-content-column-content">
-            「お金ではない価値を持ち、それでいてただの娯楽ではない活動」・ノンマネをWebメディアで発信し、もっと多くの人を社会貢献活動に繋げていきます。
+            ノンマネをWebメディアで発信していくことで、もっと多くの人を社会貢献活動に繋げていきます。
             </div>
 
             <div class="project-content-column-button">
               <a href='https://non-mone.com' target="_blank">
-                ノンマネへ
+                Webメディア・ノンマネへ
               </a>
             </div>
           </div>

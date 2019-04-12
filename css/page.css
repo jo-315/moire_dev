@@ -9,7 +9,7 @@
 }
 
 .page_content_block h3 {
-  border-bottom: solid 2px #2fcbb2;
+  text-align: center;
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
@@ -26,10 +26,14 @@
   margin: 0 auto;
 }
 
+.content_pre_wrap {
+  white-space: pre-wrap;
+}
+
 @media screen and (max-width: 650px) {
   .page_content--text {
     width: 100%;
-    padding: 0 20px;
+    padding: 0 10px;
   }
 
   .page_content_block h3 {
@@ -56,10 +60,30 @@ About Us
 
 /* ABOUT US */
 .about_content_wrap {
-  margin: 0 0 40px;
+  margin: 20px 0 40px;
   text-align: left;
   font-size: 16px;
   color: #373735;
+}
+
+.about_content_img {
+  display: inline-flex;
+  vertical-align: top;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.about_content_kenjo {
+  display: inline-flex;
+  vertical-align: top;
+  width: calc(100% - 100px - 2%);
+  margin: 20px 0;
+  padding-left: 10px;
+}
+
+.about_content_kenjo_content {
+  margin: 20px 0;
 }
 
 .about_content_wrap__weekend {

@@ -40,9 +40,19 @@
               </li>
               <li>
                 <a href="https://non-mone.com/" target="_blank">
-                  ノンマネ
+                Webメディア・ノンマネ
                 </a>
               </li>
+              <li>
+								<a href="https://www.facebook.com/pg/moire12/events/" target="_blank">
+									ノンマネ企画部
+								</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/pg/moire12/events/" target="_blank">
+									週末キャラバン
+								</a>
+							</li>
             </ul>
           </div>
         </li>

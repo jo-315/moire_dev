@@ -5,7 +5,25 @@ get_header('project');
   <div class="page_content_block">
     <div class="page_content--text">
       <div class="about_content_block--title">
-        <h2>ノンマネ</h2>
+        <h2>ノンマネとは？</h2>
+      </div>
+
+      <div class="about_content_wrap">
+        私たちは、『お金ではない価値を持ち、それでいてただの娯楽ではない活動』をノンマネと呼んでいます。
+        ノンマネは様々な活動を含みますが、その中には社会貢献活動と呼ばれるものもあります。
+        そしてノンマネを広めていくことで、社会貢献を身近にしていこうと考えています。
+      </div>
+    </div>
+  </div>
+
+  <div class="between_content">
+    <div class="between_content_effect">
+    </div>
+  </div>
+  <div class="page_content_block">
+    <div class="page_content--text">
+      <div class="about_content_block--title">
+        <h2>Webメディア・ノンマネ</h2>
       </div>
 
       <div class="project_icon">
@@ -16,10 +34,8 @@ get_header('project');
       </div>
 
       <div class="about_content_wrap">
-        NPO・NGOの活動やボランティアなど、社会貢献活動と呼ばれる活動はまだまだ社会に十分受け入れられているとは言い難いのが実情です。
-        確かに、このような活動が株式会社の事業のような形で経済的に回るようにするべきだという意見には一理あります。
-        しかし、まだまだ社会貢献活動といった形でしか回らない活動や、社会貢献活動だからこそ達成できることはたくさんあります。
-        だからこそ、社会貢献活動を促進することで人々が今より少し良いと思えるような世の中を作っていきます。
+        社会貢献活動を含むノンマネは、それと同時に社会貢献に関心のない人達が関心を持つような活動も含まれます。
+        そして、社会貢献でない活動の記事に興味を持ちWebサイトに訪れた方が、ついでに社会貢献の記事を読み、そこで興味を持ってもらうことを目的として、私たちはWebメディアを運営しています。
       </div>
 
       <div class="project_img project_img__nonmeney">
@@ -30,7 +46,7 @@ get_header('project');
       </div>
 
       <a href='https://non-mone.com' target="_blank" class="moire-button">
-        ノンマネへ
+        Webメディア・ノンマネへ
       </a>
     </div>
   </div>
