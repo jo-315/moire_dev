@@ -107,13 +107,14 @@
 
  .block-wrapper h2 {
    margin: 0 0 5px;
-   letter-spacing: 4px;
+   font-size: 28px;
+   font-family: 'Alegreya Sans SC', sans-serif;
  }
 
  .front-block-title {
-   width: 100px;
+   width: 50px;
    height: 1px;
-   background-color: #ff2a36;
+   background-color: #2fcbb2;
    display: block;
    margin: 0 auto;
  }
@@ -122,8 +123,9 @@
    padding: 50px 0;
    margin: 0 auto;
    text-align: center;
-   max-width: 1800px;
+   max-width: 1200px;
    width: 100%;
+   font-size: 0;
  }
 
  @media screen and (max-width: 800px) {
@@ -156,7 +158,7 @@ news
 }
 
 .news-archive-link {
-  margin-top: 60px;
+  margin-top: 10px;
 }
 
 .news-archive-link a {
@@ -179,10 +181,23 @@ HPブロック
  */
 
 .project-content-column-wrap {
-  margin: 40px 0;
+  margin: 40px 1%;
   display: inline-block;
-  width: calc(98% / 3);
+  width: calc(100% / 3 - 2%);
   vertical-align: top;
+  background: #f7f7f7;
+  padding: 30px 0;
+  box-shadow: 0px 0px 5px -2px;
+  border-radius: 5px;
+  opacity: 0;
+  transform : translate(0, 50px);
+  transition : all 500ms;
+  border-top: 4px solid #2fcbb2;
+}
+
+.project-content-column-wrap_fadein{
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .project-content-column {
@@ -192,7 +207,7 @@ HPブロック
 }
 
 .project-content-column-wrap h3 {
-  margin: 0;
+  margin: 0 0 15px;
   font-size: 22px;
   font-weight: bold;
 }
@@ -208,13 +223,13 @@ HPブロック
 .project-content-column-content {
   padding: 0 30px;
   font-size: 16px;
-  text-align: left;
-  height: 125px;
+  height: 70px;
   margin: 20px 0;
+  font-family: '游ゴシック', 'Yu Gothic', '游ゴシック体', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
 }
 
 .project-content-column-button {
-  margin-top: 25px;
+  height: 40px;
 }
 
 .project-content-column-button a {
@@ -224,6 +239,7 @@ HPブロック
   padding: 15px 15px;
   border-radius: 5px;
   box-shadow: 1px 1px 3px -2px #202223;
+  font-size: 16px;
 }
 
 .project-content-column-button a:hover {
@@ -232,14 +248,7 @@ HPブロック
   background: #ffffff;
 }
 
-@media screen and (max-width: 1198px) {
-  .project-content-column-content {
-    padding: 12px 20px;
-    height: 150px;
-  }
-}
-
-@media screen and (max-width: 994px) {
+@media screen and (max-width: 900px) {
   .project-content-column {
     padding: 0 20px;
   }
@@ -248,7 +257,7 @@ HPブロック
     display: block;
     width: 100%;
     max-width: 600px;
-    margin: 0 auto 100px;
+    margin: 30px auto 0;
   }
 
   .project-content-column-content {
@@ -257,10 +266,6 @@ HPブロック
 }
 
 @media screen and (max-width: 800px) {
-  .project-content-column-wrap__weekend {
-    margin-top: 80px;
-  }
-
   .project-content-column {
     width: 100%;
     padding: 0;

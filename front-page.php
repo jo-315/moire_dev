@@ -100,6 +100,10 @@
 
         <div class="project-content-column-wrap">
           <div class="project-content-column">
+            <h3>
+              Webメディア・ノンマネ
+            </h3>
+
             <div class="project-content-column-logo">
               <img
                 data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/NonMoney.png"
@@ -107,12 +111,8 @@
               >
             </div>
 
-            <h3>
-              Webメディア・ノンマネ
-            </h3>
-
             <div class="project-content-column-content">
-            ノンマネをWebメディアで発信していくことで、もっと多くの人を社会貢献活動に繋げていきます。
+              社会貢献に関心のない方に興味を持ってもらう機会をつくる
             </div>
 
             <div class="project-content-column-button">
@@ -125,6 +125,10 @@
 
         <div class="project-content-column-wrap">
           <div class="project-content-column">
+            <h3>
+              ノンマネ企画部
+            </h3>
+
             <div class="project-content-column-logo">
               <img
                 data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/nonmoney_planning.png"
@@ -132,12 +136,8 @@
               >
             </div>
 
-            <h3>
-              ノンマネ企画部
-            </h3>
-
             <div class="project-content-column-content">
-              ノンマネとなるイベントを開催することで、ノンマネをより広めていきます。
+              ノンマネを広め、社会貢献を身近に
             </div>
 
             <div class="project-content-column-button">
@@ -150,6 +150,10 @@
 
         <div class="project-content-column-wrap project-content-column-wrap__weekend">
           <div class="project-content-column">
+            <h3>
+              週末キャラバン
+            </h3>
+
             <div class="project-content-column-logo">
               <img
                 data-src="<?php echo get_stylesheet_directory_uri(); ?>/images/weekend.png"
@@ -157,12 +161,8 @@
               >
             </div>
 
-            <h3>
-              週末キャラバン
-            </h3>
-
             <div class="project-content-column-content">
-              若者が週末の地域の活動に参加しやすくなるように、若者と地域の活動を繋ぐプロジェクトです。
+              若者と週末の社会貢献活動を繋ぐプロジェクト
             </div>
 
             <div class="project-content-column-button">
@@ -174,7 +174,7 @@
         </div>
 
         <div class="news-archive-link">
-          <a href="/project/" class="moire-button">プロジェクト一覧</a>
+          <a href="/project/" class="moire-button">プロジェクトをより詳しく</a>
         </div>
 
       </div>

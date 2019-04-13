@@ -235,15 +235,20 @@ input[type="search"]::-webkit-search-decoration {
 
 .moire-button {
 	text-decoration: none !important;
-	border: solid 3px #7fcaad;
-	padding: 10px;
-	border-radius: 5px;
+	border: solid 3px #2fcbb2;
+	color: #2fcbb2;
+	padding: 10px 30px;
+	border-radius: 1px;
 	margin-top: 10px;
+}
+
+.moire-button:visited {
+	color: #2fcbb2 !important;
 }
 
 .moire-button:hover {
 	color: #ffffff !important;
-	background: #7fcaad;
+	background: #2fcbb2;
 }
 
 fieldset {
