@@ -3313,7 +3313,7 @@ archive
  	background: #ffffff;
  	float: left;
  	width: calc((100% - 240px) / 3);
- 	height: 250px;
+ 	height: 200px;
  	margin: 0 40px 50px;
  	position: relative;
  }
@@ -3384,7 +3384,7 @@ archive
  	.blog-post,
 	.news-archive-wrap li {
  		width: 400px;
- 		height: 320px;
+ 		height: auto;
  		margin: 0 auto 30px;
  		float: none;
  	}
@@ -3395,9 +3395,7 @@ archive
  	.blog-post,
 	.news-archive-wrap li {
  		width: 340px;
- 		height: 340px;
  	}
-
  }
 
  @media screen and (max-width: 380px) {
@@ -3405,7 +3403,6 @@ archive
  	.blog-post,
 	.news-archive-wrap li {
  		width: 290px;
- 		height: 300px;
  	}
  }
 

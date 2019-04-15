@@ -140,8 +140,15 @@ single
 
  .single-content {
    padding: 40px 0;
-   font-size: 15px;
+   font-size: 17px;
  }
+
+ @media screen and (max-width: 500px) {
+  .single-content {
+    font-size: 15px;
+  }
+ }
+
 
  /* 投稿ページのclassはここに追加 */
 
